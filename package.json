@@ -1,0 +1,18 @@
+{
+  "name": "human-asset-review-sheet",
+  "version": "0.1.0-alpha.1",
+  "private": false,
+  "type": "module",
+  "description": "素材レビュー・人間確認シート closed alpha",
+  "scripts": {
+    "test": "node tests/product.test.mjs",
+    "validate": "node src/cli/index.js --input samples/representative-suite.json --output dist/human-asset-review-sheet-representative-report.json",
+    "build": "node scripts/build-docs-zip.mjs"
+  },
+  "keywords": [
+    "AssetPipeline",
+    "closed-alpha",
+    "qcds"
+  ],
+  "license": "MIT"
+}
