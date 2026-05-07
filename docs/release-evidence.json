@@ -1,22 +1,59 @@
 {
   "product": "human-asset-review-sheet",
   "tag": "v0.1.0-alpha.1",
-  "status": "pre-release-pending",
+  "status": "released",
+  "updatedAt": "2026-05-07T23:22:39.584Z",
   "manualTestStatus": "手動テスト未実施",
   "automatedVerification": {
-    "npmTest": "pending",
-    "npmRunValidate": "pending",
-    "npmRunBuild": "pending"
+    "npmTest": "passed",
+    "npmRunValidate": "passed",
+    "npmRunBuild": "passed",
+    "firstPassOutput": {
+      "npmTest": "resume: initial npm test output was produced before release-evidence resume",
+      "npmRunValidate": "resume: initial npm run validate output was produced before release-evidence resume",
+      "npmRunBuild": "resume: initial npm run build output was produced before release-evidence resume"
+    }
   },
   "github": {
     "repo": "https://github.com/Sunmax0731/human-asset-review-sheet",
-    "releaseUrl": null,
-    "prerelease": null,
-    "latest": null,
-    "assetCount": 0
+    "releaseUrl": "https://github.com/Sunmax0731/human-asset-review-sheet/releases/tag/v0.1.0-alpha.1",
+    "tagName": "v0.1.0-alpha.1",
+    "prerelease": true,
+    "latest": false,
+    "latestEndpoint": {
+      "latestEndpointStatus": "not-found-or-not-latest",
+      "latestTag": null,
+      "stderr": "gh: Not Found (HTTP 404)\n"
+    },
+    "assetCount": 3,
+    "assets": [
+      "human-asset-review-sheet-docs.zip",
+      "manual-test.md",
+      "strict-manual-test-addendum.md"
+    ]
   },
   "git": {
-    "mainOriginClean": null,
-    "codexBranchesRemaining": null
+    "mainOriginCleanBeforeEvidenceCommit": {
+      "mainOriginClean": true,
+      "aheadBehind": {
+        "ahead": 0,
+        "behind": 0
+      },
+      "status": "",
+      "codexBranchesRemaining": [
+        "codex/closed-alpha-release"
+      ]
+    }
+  },
+  "assets": [
+    "dist/human-asset-review-sheet-docs.zip",
+    "docs/manual-test.md",
+    "docs/strict-manual-test-addendum.md"
+  ],
+  "qcds": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-"
   }
 }
