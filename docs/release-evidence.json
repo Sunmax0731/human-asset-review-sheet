@@ -1,76 +1,60 @@
 {
   "product": "human-asset-review-sheet",
+  "repository": "Sunmax0731/human-asset-review-sheet",
+  "githubUrl": "https://github.com/Sunmax0731/human-asset-review-sheet",
+  "releaseUrl": "https://github.com/Sunmax0731/human-asset-review-sheet/releases/tag/v0.1.0-alpha.1",
   "tag": "v0.1.0-alpha.1",
-  "status": "released",
-  "updatedAt": "2026-05-07T23:22:39.584Z",
-  "manualTestStatus": "手動テスト未実施",
-  "automatedVerification": {
-    "npmTest": "passed",
-    "npmRunValidate": "passed",
-    "npmRunBuild": "passed",
-    "firstPassOutput": {
-      "npmTest": "resume: initial npm test output was produced before release-evidence resume",
-      "npmRunValidate": "resume: initial npm run validate output was produced before release-evidence resume",
-      "npmRunBuild": "resume: initial npm run build output was produced before release-evidence resume"
-    }
+  "prerelease": true,
+  "latest": false,
+  "latestCheck": {
+    "endpoint": "not-found-or-no-stable-release",
+    "latestTag": null,
+    "latestIsThisPrerelease": false
   },
-  "github": {
-    "repo": "Sunmax0731/human-asset-review-sheet",
-    "releaseUrl": "https://github.com/Sunmax0731/human-asset-review-sheet/releases/tag/v0.1.0-alpha.1",
-    "tagName": "v0.1.0-alpha.1",
-    "prerelease": true,
-    "latest": false,
-    "latestEndpoint": {
-      "latestEndpointStatus": "not-found-or-not-latest",
-      "latestTag": null,
-      "stderr": "gh: Not Found (HTTP 404)\n"
-    },
-    "assetCount": 3,
-    "assets": [
+  "assetCount": 3,
+  "assets": {
+    "required": [
+      "dist/human-asset-review-sheet-docs.zip",
+      "docs/manual-test.md",
+      "docs/strict-manual-test-addendum.md"
+    ],
+    "actualNames": [
       "human-asset-review-sheet-docs.zip",
       "manual-test.md",
       "strict-manual-test-addendum.md"
     ],
-    "url": "https://github.com/Sunmax0731/human-asset-review-sheet"
+    "actualCount": 3,
+    "allRequiredPresent": true
   },
-  "git": {
-    "mainOriginCleanBeforeEvidenceCommit": {
-      "mainOriginClean": true,
-      "aheadBehind": {
-        "ahead": 0,
-        "behind": 0
-      },
-      "status": "",
-      "codexBranchesRemaining": [
-        "codex/closed-alpha-release"
-      ]
-    }
-  },
-  "assets": [
-    "dist/human-asset-review-sheet-docs.zip",
-    "docs/manual-test.md",
-    "docs/strict-manual-test-addendum.md"
-  ],
-  "qcds": {
+  "qcdsEvaluation": {
     "Quality": "S-",
     "Cost": "S-",
     "Delivery": "S-",
     "Satisfaction": "S-"
   },
-  "repository": "Sunmax0731/human-asset-review-sheet",
-  "githubUrl": "https://github.com/Sunmax0731/human-asset-review-sheet",
-  "releaseUrl": "https://github.com/Sunmax0731/human-asset-review-sheet/releases/tag/v0.1.0-alpha.1",
-  "prerelease": true,
-  "latest": false,
-  "assetCount": 3,
-  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
-  "platformType": "cli-release-tool",
+  "platformRuntimeGate": {
+    "product": "human-asset-review-sheet",
+    "platformType": "cli-release-tool",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "packageTest": true
+  },
+  "automatedTests": [
+    {
+      "command": "npm test",
+      "result": "passed"
+    }
+  ],
   "manualTest": "not-run-by-codex",
-  "qcdsEvaluation": {
-    "Quality": "S-",
-    "Cost": "S-",
-    "Delivery": "S-",
-    "Satisfaction": "S-",
-    "capReason": "manual-test-not-run-by-codex"
+  "git": {
+    "ahead": 0,
+    "behind": 0,
+    "status": "",
+    "localCodex": [
+      "codex/closed-alpha-release"
+    ],
+    "remoteCodex": [],
+    "clean": false
   }
 }
