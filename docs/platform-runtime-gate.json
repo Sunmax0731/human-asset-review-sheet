@@ -1,0 +1,11 @@
+{
+  "product": "human-asset-review-sheet",
+  "title": "素材レビュー・人間確認シート",
+  "domain": "AssetPipeline",
+  "ideaNo": 10,
+  "platformType": "cli-release-tool",
+  "expectedPublicTarget": "GitHub Release / BOOTH",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
